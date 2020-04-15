@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Track a New House</title>
+</head>
+<body>
+  <h1 th:text="${house.address}"></h1>
+  <p th:text="${house.city}" th:style="${house.city eq "Boston"} ? "color: green;"}"></p>
+</body>
+</html>
